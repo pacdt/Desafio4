@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 main{
     display: flex;
@@ -11,11 +11,161 @@ main{
     width: 100vw;
     height: 100vh;
 }
-#left{
-    background: #F7FAFC;
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#logo {
+	display: none;
+}
+#login {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#container {
+	/* background: red; */
+	width: 90%;
+	height: 85%;
+	display: flex;
+	flex-direction: column;
+}
+#text-head {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+#text-head h3 {
+	margin-bottom: 7px;
+	font-family: "Merriweather";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.2em;
+	line-height: 20px;
+	color: #1a202c;
+}
+#text-head h1 {
+	margin-bottom: 40px;
+	font-family: "Merriweather";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 33px;
+	color: #1a202c;
+}
+#form {
+	display: flex;
+	flex-direction: column;
+}
+#form input {
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	width: 100%;
+	height: 50px;
+	margin: 11px 0;
+	padding-left: 20px;
+}
+#form input::placeholder {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #1a202c;
+}
+#form legend {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.1em;
+	line-height: 19px;
+	color: #1a202c;
+}
+#remember {
+	display: flex;
+	flex-direction: row;
+
+	margin-top: 28px;
+	justify-content: space-between;
+}
+#remember input {
+	width: 1.5em;
+	margin-top: -1.2em;
+	vertical-align: middle;
+}
+#remember label {
+	margin-left: 11px;
+}
+#remember div {
+	display: flex;
+	flex-direction: row;
+}
+#enter {
+	background: #04c45c;
+	border-radius: 5px;
+	border: none;
+	height: 50px;
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #ffffff;
+	margin-bottom: 15px;
+    cursor: pointer;
+}
+#social {
+	background: #1a202c;
+	border: none;
+	border-radius: 5px;
+	height: 50px;
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #ffffff;
+	margin-bottom: 15px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: .9;
+}
+button:active{
+    opacity:.6;
+}
+#social img {
+	margin-right: 11px;
+}
+#footer {
+	text-align: center;
+	padding-top: 130px;
+}
+a {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 17px;
+	color: #2b6cb0;
+	text-decoration: none;
+}
+@media screen and (min-width: 999px) {
+    #logo {
+		background: #f7fafc;
+		width: 50vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+        flex-shrink: 4;
+	}
+    #login{
+        width: 50vw;
+        flex-shrink: 1;
+    }
+    #container{
+        width: 40%;
+        height: 60%;
+        /* background: red; */
+    }
+    
 }
